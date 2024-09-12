@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+:root{
+    --cor_fundo: #211836;
+    --cor_barra: #423c47;
+    --cor_fontes: #a899af;
+    --fonte_titulos: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #211836, #121016);
+    height: 100vh;
+    color: var(--cor_fontes);
+    line-height: 1.6;
+}
+
+
+.principal {
+    display: flex;
+    margin: 0% 15%;
+}
+
+.imagens {
+    display: flex;
+    margin: 3%;
+    margin-left: 5%;
+}
+
+h1 {
+    font-family: var(--fonte_titulos);
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.sessao1 {
+    width: 1500px;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textoprincipal{
+    line-height: 24px;
+}
+
+hr {
+    margin-bottom: 20px;
+    border: 1px solid var(--cor_fontes);
+}
+
+header {
+    background-color: var(--cor_barra);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+button {
+    background-color: #9983aa;
+    box-shadow: 4px 4px 1px #211836;
+}
+
+button:hover {
+    background-color: #ccbcda;
+    transition: 0.2s;
+}
+
+input {
+    background-color: #ccbcda;
+    outline: none;
+}
+
+::placeholder {
+    color: #211836;
+}
+
+.modo {
+    height: 20px;
+    width: 20px;
+    background-color: #9983aa;
+    border-radius: 100%;
+    color: #9983aa;
+    text-align: center;
+    margin: 5px 30px 0px 20px;
+    box-shadow: 4px 4px 1px #211836;
+}
+
+.modo:hover {
+    background-color: #ccbcda;
+    transition: 0.2s;
+}
+
+.container {
+    width: 170%;
+    margin: 2rem auto;
+    margin-left: 2%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.logo {
+    width: 50px;
+    margin: 2px 5px -13px 20px;
+}
+
+nav {
+    display: flex;
+    margin-top: -150;
+}
+
+button {
+    border: 0px;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+input {
+    border: 0px;
+    border-radius: 10px;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+
+}
+
+.logotexto{
+    font-family: var(--fonte_titulos);
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor_fontes);
+}
